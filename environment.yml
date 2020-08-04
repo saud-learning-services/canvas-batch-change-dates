@@ -1,7 +1,15 @@
-name: interface_test_env
-
+name: CBCD_env
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
 dependencies:
-  - python=3.8
+  - python-dotenv
+  - reportlab
   - termcolor
+  - requests
+  - jupyter
+  - pandas
+  - pip
   - pip:
-    - canvasapi
+      - canvasapi
