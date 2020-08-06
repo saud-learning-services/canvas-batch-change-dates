@@ -39,8 +39,8 @@ print(INPUT)
 API_URL = "https://ubc.test.instructure.com/"
 #API_KEY = ""
 #canvas = createInstance(API_URL, API_KEY)
-#API_KEY = getpass.getpass("Enter token: ")
-API_KEY = input("Enter token: ")
+API_KEY = getpass.getpass("Enter token: ")
+#API_KEY = input("Enter token: ")
 canvas = createInstance(API_URL, API_KEY.strip())
 
 def checkDate(date_check, date_type):
