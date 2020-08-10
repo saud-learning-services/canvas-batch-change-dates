@@ -19,4 +19,11 @@ Python script for the function of batch changing the start and end dates for cou
 1. Canvas API Token
 2. start_end_courses.csv (edit file as needed)
 
-**If you wanna contribute anything pull requests are welcome!**
+## Contribution Guidelines:
+**These guidelines assume you have a basic understanding of Git. If you do not please look at this resource here.**
+1. If you wish to contribute, clone the repository.
+2. Switch the branch to **CBCD_dev** or make your own branch if you prefer.
+3. Make your changes. Commit them with a proper message.
+4. Make a pull request from your branch or dev branch into the master branch. Someone will review these changes. If anything needs to be changed, you will be contacted through GitHub.
+
+**Contributions are always welcomed, but please follow the guidelines**
