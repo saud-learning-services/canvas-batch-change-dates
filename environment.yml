@@ -1,4 +1,4 @@
-name: CBCD_env
+name: canvas_batch_change_dates
 channels:
   - conda-forge
   - anaconda
