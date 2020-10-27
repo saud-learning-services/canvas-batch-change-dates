@@ -1,7 +1,14 @@
-name: interface_test_env
-
+name: canvas_batch_change_dates
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
 dependencies:
-  - python=3.8
+  - python-dotenv
   - termcolor
+  - requests
+  - jupyter
+  - pandas
+  - pip
   - pip:
-    - canvasapi
+      - canvasapi
