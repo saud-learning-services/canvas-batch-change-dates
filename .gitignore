@@ -1,4 +1,12 @@
-.env
 __pycache__
 .ipynb_checkpoints
 *.pyc
+
+ignore
+
+data/complete/*
+!data/complete/.gitkeep
+
+data/output/*
+!data/output/.gitkeep
+
