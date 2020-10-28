@@ -1,10 +1,8 @@
 
-""" This Script
-This script has everything needed to update canvas course settings
-# is a real comment
-# is a commented out piece of code that would be needed to run this script alone
-These pieces of code are provided by the appropriate Jupyter notebook
-
+"""
+This module contains functions that are imported and executed in Jupyter Notebook
+It also contains helper functions
+All functionality is around changing course dates on Canvas and reading/writing to CSVs
 """
 
 from canvasapi import Canvas
