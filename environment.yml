@@ -1,14 +1,14 @@
-name: canvas_batch_change_dates
+name: canvas-batch-change-dates
 channels:
   - conda-forge
   - anaconda
   - defaults
 dependencies:
-  - python-dotenv
   - termcolor
+  - python>=3.7.0
   - requests
   - jupyter
   - pandas
   - pip
   - pip:
-      - canvasapi
+      - canvasapi>=2.0.0
