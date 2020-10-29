@@ -21,7 +21,6 @@ _Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learn
 1. Ensure you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed (Python 3.7 version)
 1. Clone **canvas-batch-change-dates** repository
 1. Import environment (once): `$ conda env create -f environment.yml`
-1. `$ conda env create -f environment.yml`
 
 #### Every Time
 
