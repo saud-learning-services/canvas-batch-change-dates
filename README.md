@@ -24,10 +24,10 @@ _Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learn
 
 #### Every Time
 
-2. `$ conda env create -f environment.yml`
-3. `$ conda activate canvas-batch-change-dates`
-4. `$ jupyter notebook`
-5. The previous command will have opened up a tab in your browser, select 'Canvas Batch Change Dates.ipynb' and follow the instructions listed.
+1. `$ conda env create -f environment.yml`
+1. `$ conda activate canvas-batch-change-dates`
+1. `$ jupyter notebook`
+1. The previous command will have opened up a tab in your browser, select 'Canvas Batch Change Dates.ipynb' and follow the instructions listed.
 
 ## Inputs for Module
 
