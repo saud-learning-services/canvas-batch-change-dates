@@ -105,8 +105,9 @@ def update_multiple_courses(df, restrict_enrol=None):
 
 
 def output_csv(df):
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H.%M.%S')
     output_folder = 'data/output'
-    file_name = 'canvas-course_settings.csv'
+    file_name = f'canvas_course_settings_{now}.csv'
 
     output_path = output_folder + '/' + file_name
 
@@ -132,7 +133,6 @@ def output_csv(df):
             continue
 
     # Copy the input CSV to /complete and timestamp
-    now = datetime.datetime.now().strftime('%Y-%m-%d %H.%M.%S')
     original = f'{settings.ROOT_PATH}/data/input/start_end_courses.csv'
     target = f'{settings.ROOT_PATH}/data/complete/start_end_courses_{now}.csv'
 
