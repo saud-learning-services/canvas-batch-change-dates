@@ -26,6 +26,18 @@ def initialize():
     settings.TOKEN = getpass.getpass('Enter token: ').strip()
     settings.CANVAS = create_instance(settings.INSTANCE, settings.TOKEN)
 
+def create_courses_file():
+    """Creates a file to work with get_courses_df from subaccount_id
+
+    parameters:
+    subaccount_id (Int): the subaccount to run in
+
+    returns:
+    df (Dataframe): dataframe with course ids and current course information
+    """
+    account_id = getpass.getpass('Enter subaccount_id: ').strip()
+    courses = settings.CANVAS.get_courses(account_id)
+    return(courses)
 
 def get_courses_df(file):
     """Tries to read and return file as df
