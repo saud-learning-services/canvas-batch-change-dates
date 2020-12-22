@@ -57,7 +57,7 @@ def get_courses_df(file):
         sys.exit(1)
 
 
-def update_multiple_courses(df, restrict_enrol=None):
+def create_course_update_df(df, restrict_enrol=None):
     """iterates on df of course lists and creates a list of update details"""
 
     my_list_x = []
