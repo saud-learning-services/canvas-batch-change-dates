@@ -27,6 +27,11 @@ def initialize():
     settings.CANVAS = create_instance(settings.INSTANCE, settings.TOKEN)
 
 def create_courses_file():
+
+    #TODO - this function is incomplete - needs to ask user if they want to create
+    #TODO - give option to do this or choose existing
+    #TODO - enrollment_term filter
+    
     """Creates a file to work with get_courses_df from subaccount_id
 
     parameters:
