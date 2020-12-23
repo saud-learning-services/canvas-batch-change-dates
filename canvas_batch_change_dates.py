@@ -45,17 +45,19 @@ def create_courses_file():
     account = settings.CANVAS.get_account(account_id)
     courses = account.get_courses()
 
+    course_info = []
+
     for c in courses:
-    course_dict = {'course_id': c.id,
-        'course_name': c.name,
-        'term': c.enrollment_term_id,
-        'course_subaccount': c.account_id,
-        'course_subaccount_name': CANVAS.get_account(c.account_id).name,
-        'start_at' : c.start_at,
-        'end_at' : c.end_at,
-        'timezone' : c.time_zone}
+        course_dict = {'course_id': c.id,
+            'course_name': c.name,
+            'term': c.enrollment_term_id,
+            'course_subaccount': c.account_id,
+            'course_subaccount_name': account.name,
+            'start_at' : c.start_at,
+            'end_at' : c.end_at,
+            'timezone' : c.time_zone}
     
-    course_info.append(course_dict)
+        course_info.append(course_dict)
     
     df = pd.DataFrame(course_info)
     
@@ -106,6 +108,7 @@ def create_course_update_df(df, restrict_enrol=None):
         my_list_x.append(x)
 
     updateNotes = pd.DataFrame.from_dict(my_list_x)
+
     display(updateNotes[["course_id", "course_name", "note", "start_at_og", "start_at_new",
                          "end_at_og", "end_at_new", "restrict_enrol_og", "restrict_enrol_new"]])
 
@@ -388,7 +391,7 @@ if __name__ == '__main__':
     courses_df = get_courses_df(
         f'{settings.ROOT_PATH}/data/input/start_end_courses.csv')
 
-    details = update_multiple_courses(
+    details = create_course_update_df(
         courses_df,
         restrict_participation_to_dates
     )
