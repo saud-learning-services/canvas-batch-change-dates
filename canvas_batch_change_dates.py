@@ -5,12 +5,13 @@ It also contains helper functions
 All functionality is around changing course dates on Canvas and reading/writing to CSVs
 """
 
+from getpass import getpass
 from canvasapi import Canvas
+from pick import pick
 import datetime
 import settings
 import shutil
 import sys
-import getpass
 import os
 import pandas as pd
 from IPython.display import display
@@ -23,7 +24,7 @@ def initialize():
     '''
     Main entry point for Jupyter Notebook
     '''
-    settings.TOKEN = getpass.getpass('Enter token: ').strip()
+    settings.TOKEN = getpass('Enter Canvas API Token: ').strip()
     settings.CANVAS = create_instance(settings.INSTANCE, settings.TOKEN)
 
 def create_courses_file():
@@ -371,3 +372,27 @@ def create_instance(API_URL, API_TOKEN):
         # Print the error to console in red and exit
         cprint(f'\nERROR: {message}', 'red')
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    # get token from user
+    initialize()
+
+    # prompt user to specifiy whether or not to restrict participation dates
+    title = 'Restrict participation dates?'
+    subtitle = 'NONE will keep settings as is.\nTRUE will restrict participation to within the given dates.\nFALSE will allow participation outside of the given dates.'
+    full_text = f'{title}\n{subtitle}'
+    options = ['None', 'True', 'False']
+    restrict_participation_to_dates, index = pick(options, full_text)
+
+    courses_df = get_courses_df(
+        f'{settings.ROOT_PATH}/data/input/start_end_courses.csv')
+
+    details = update_multiple_courses(
+        courses_df,
+        restrict_participation_to_dates
+    )
+
+    print('\nTotal Courses: {}\n'.format(len(details)))
+
+    output_csv(details)

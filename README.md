@@ -51,5 +51,5 @@ _Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learn
 
 1. Run
    1. `$ conda activate canvas-batch-change-dates`
-   1. `$ jupyter notebook`
-   1. The previous command will have opened up a tab in your browser, select 'Canvas Batch Change Dates.ipynb' and follow the instructions listed.
+   1. `$ jupyter notebook` OR `$ python canvas_batch_change_dates.py` (to skip Jupyter and run and recieve all prompts in terminal)
+   1. If ran as a Jupyter Notebook a tab will open in your browser - select 'Canvas Batch Change Dates.ipynb' and follow the instructions listed. If ran as Python script, you'll recieve the same prompts in termianl.
