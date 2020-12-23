@@ -26,6 +26,40 @@ def initialize():
     settings.TOKEN = getpass.getpass('Enter token: ').strip()
     settings.CANVAS = create_instance(settings.INSTANCE, settings.TOKEN)
 
+def create_courses_file():
+
+    #TODO - this function is incomplete - needs to ask user if they want to create
+    #TODO - give option to do this or choose existing
+    #TODO - enrollment_term filter
+    
+    """Creates a file to work with get_courses_df from subaccount_id
+
+    parameters:
+    subaccount_id (Int): the subaccount to run in
+
+    returns:
+    df (Dataframe): dataframe with course ids and current course information
+    """
+    account_id = getpass.getpass('Enter subaccount_id: ').strip()
+    account = settings.CANVAS.get_account(account_id)
+    courses = account.get_courses()
+
+    for c in courses:
+    course_dict = {'course_id': c.id,
+        'course_name': c.name,
+        'term': c.enrollment_term_id,
+        'course_subaccount': c.account_id,
+        'course_subaccount_name': CANVAS.get_account(c.account_id).name,
+        'start_at' : c.start_at,
+        'end_at' : c.end_at,
+        'timezone' : c.time_zone}
+    
+    course_info.append(course_dict)
+    
+    df = pd.DataFrame(course_info)
+    
+    df.to_csv(f'{settings.ROOT_PATH}/data/output/{account_id}-course information.csv')
+
 
 def get_courses_df(file):
     """Tries to read and return file as df
@@ -57,7 +91,7 @@ def get_courses_df(file):
         sys.exit(1)
 
 
-def update_multiple_courses(df, restrict_enrol=None):
+def create_course_update_df(df, restrict_enrol=None):
     """iterates on df of course lists and creates a list of update details"""
 
     my_list_x = []

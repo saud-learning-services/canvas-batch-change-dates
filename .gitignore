@@ -3,7 +3,7 @@ __pycache__
 *.pyc
 
 ignore
-
+*.csv
 data/complete/*
 !data/complete/.gitkeep
 
