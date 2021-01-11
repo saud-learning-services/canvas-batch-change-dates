@@ -36,7 +36,7 @@
 
 ### Sauder Operations
 
-_Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learning-services/instructions-and-other-templates/blob/master/sauder-ops-guide-jupyter-env-and-launch.md#-ran-it-before-start-here) for detailed instructions to run in Jupyter. ("The Project", or "the-project" is "canvas-batch-change-dates" or "Canvas Batch Change Dates")._
+_Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learning-services/instructions-and-other-templates) to see detailed instructions for setup and running scripts in Jupyer Notebook._
 
 ### General (terminal instructions)
 
