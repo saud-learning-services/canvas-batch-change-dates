@@ -36,12 +36,11 @@
 
 ### Sauder Operations
 
-_Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learning-services/instructions-and-other-templates) to see detailed instructions for setup and running scripts in Jupyer Notebook._
+_Are you Sauder Operations Staff? Please go [here](TODO) to see detailed instructions for setup and running scripts in Jupyer Notebook._
 
 ### General (terminal instructions)
 
 > Project uses **conda** to manage environment (See official **conda** documentation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file))
-
 #### First Time
 
 1. Ensure you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed (Python 3.7 version)
@@ -52,5 +51,5 @@ _Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learn
 
 1. Run
    1. `$ conda activate canvas-batch-change-dates`
-   1. `$ jupyter notebook` OR `$ python canvas_batch_change_dates.py` (to skip Jupyter and run and recieve all prompts in terminal)
-   1. If ran as a Jupyter Notebook a tab will open in your browser - select 'Canvas Batch Change Dates.ipynb' and follow the instructions listed. If ran as Python script, you'll recieve the same prompts in termianl.
+   2. `$ python canvas_batch_change_dates.py` 
+   3. Follow terminal prompts
