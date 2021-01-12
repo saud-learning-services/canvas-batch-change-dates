@@ -36,7 +36,7 @@
 
 ### Sauder Operations
 
-_Are you Sauder Operations Staff? Please go [here](TODO) to see detailed instructions for setup and running scripts in Jupyer Notebook._
+_Are you Sauder Operations Staff? Please go [here](TODO) to see detailed instructions for setup and running scripts in Jupyter Notebook._
 
 ### General (terminal instructions)
 
