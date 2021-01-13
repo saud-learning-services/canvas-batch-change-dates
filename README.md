@@ -33,10 +33,10 @@
 - The Jupyter Notebook will create a few additional prompts to get the API Token and confirm outcomes
 
 ## Getting Started
-
 ### Sauder Operations
 
-_Are you Sauder Operations Staff? Please go [here](TODO) to see detailed instructions for setup and running scripts in Jupyer Notebook._
+_Are you Sauder Operations Staff? Please go [here](https://github.com/saud-learning-services/instructions-and-other-templates/blob/main/docs/running-instructions.md) for detailed instructions to run in Jupyter. ("The Project", or "the-project" is "canvas-subaccount-movement" or "Canvas Subaccount Movement")._
+) to see detailed instructions for setup and running scripts in Jupyer Notebook._
 
 ### General (terminal instructions)
 
