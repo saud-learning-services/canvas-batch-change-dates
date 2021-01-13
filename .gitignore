@@ -10,3 +10,7 @@ data/complete/*
 data/output/*
 !data/output/.gitkeep
 
+# don't keep data excep specified sample
+data/input/*
+!data/input/.gitkeep
+!data/input/start_end_courses-template.csv
