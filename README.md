@@ -24,8 +24,8 @@
 
 ## Output
 
-1. `./data/output/canvas-course-settings_{YYYY-MM-DD HH.MM.SS}.csv`: Details status of last run including affected courses, original start/end dates, new start/end dates and any changes to enrollment restrictions
-2. `./data/completed/start_end_courses_{YYYY-MM-DD HH.MM.SS}`: This is a copy of your `start_end_courses.csv` copied over at the end of the run and timestamped. These will automatically get stored in the `./data/complete` folder.
+1. `./data/output/canvas-course-settings_{YYYY-MM-DD HH-MM-SS}.csv`: Details status of last run including affected courses, original start/end dates, new start/end dates and any changes to enrollment restrictions
+2. `./data/completed/start_end_courses_{YYYY-MM-DD HH-MM-SS}`: This is a copy of your `start_end_courses.csv` copied over at the end of the run and timestamped. These will automatically get stored in the `./data/complete` folder.
 
 ## ⚠️ Important Caveats
 
