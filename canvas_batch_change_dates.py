@@ -143,7 +143,7 @@ def create_course_update_df(df, restrict_enrol=None):
 
 
 def output_csv(df):
-    now = datetime.datetime.now().strftime('%Y-%m-%d %H.%M.%S')
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
     output_folder = 'data/output'
     file_name = f'canvas_course_settings_{now}.csv'
 
