@@ -14,3 +14,5 @@ data/output/*
 data/input/*
 !data/input/.gitkeep
 !data/input/start_end_courses-template.csv
+
+**/.DS_store
